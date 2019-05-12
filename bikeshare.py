@@ -1,7 +1,6 @@
 import time
 import pandas as pd
 import numpy as np
-
 CITY_DATA = {'chicago': 'chicago.csv',
              'new york city': 'new_york_city.csv',
              'washington': 'washington.csv'}
@@ -65,7 +64,7 @@ def get_filters():
     # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
     day = str(input('Please specify which day of week, or type "all" to apply no day filter: ')).lower()
     day_flag, day = validate_input(day, day_dict)
-    # Checking for valid day
+    # Checking for valid day of the week
     while not day_flag:
         print('\nThat was not a valid day of the week.')
         day_input = str(input('Please specify which day of the week: ')).lower()
