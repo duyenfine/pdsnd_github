@@ -108,8 +108,8 @@ def raw_data(df):
     '''Prompt user about displaying 5 rows of raw data'''
     raw_row_ct = 0
     while True:
-        raw_dat = input('\nWould you like to see 5 rows of raw data? Enter "yes" or "no".\n').lower()
-        if raw_dat == 'yes':
+        user_prompt = input('\nWould you like to see 5 rows of raw data? Enter "yes" or "no".\n').lower()
+        if user_prompt == 'yes':
             print(df[raw_row_ct:raw_row_ct + 5])
             print()
             raw_row_ct += 5
